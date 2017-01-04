@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70584F901DC621220066CE7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70584F8F1DC621220066CE7E /* main.cpp */; };
+		7058500F1DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F971DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */; };
+		705850101DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F981DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */; };
+		705850111DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F991DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */; };
+		705850121DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9A1DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */; };
+		705850131DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9B1DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */; };
+		705850141DC6217F0066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */; };
+		705850151DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9D1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */; };
+		705850161DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9E1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */; };
+		705850171DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584F9F1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */; };
+		705850181DC6217F0066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */; };
+		705850191DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */; };
+		7058501A1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA21DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */; };
+		7058501B1DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */; };
+		7058501C1DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA41DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */; };
+		7058501D1DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA51DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */; };
+		7058501E1DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA61DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */; };
+		7058501F1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA71DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */; };
+		705850201DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA81DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */; };
+		705850211DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FA91DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */; };
+		705850221DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAA1DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */; };
+		705850231DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAB1DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */; };
+		705850241DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAC1DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */; };
+		705850251DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAD1DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */; };
+		705850261DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAE1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */; };
+		705850271DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FAF1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */; };
+		705850281DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB01DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */; };
+		705850291DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB11DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */; };
+		7058502A1DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */; };
+		7058502B1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */; };
+		7058502C1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB41DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */; };
+		7058502D1DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB51DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */; };
+		7058502E1DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB61DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */; };
+		7058502F1DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB71DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */; };
+		705850301DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB81DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */; };
+		705850311DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FB91DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */; };
+		705850321DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBA1DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */; };
+		705850331DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBB1DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */; };
+		705850341DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBC1DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */; };
+		705850351DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBD1DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */; };
+		705850361DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBE1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */; };
+		705850371DC621800066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FBF1DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */; };
+		705850381DC621800066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC01DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */; };
+		705850391DC621800066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC11DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */; };
+		7058503A1DC621800066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC21DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */; };
+		7058503B1DC621800066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC31DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */; };
+		7058503C1DC621800066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC41DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */; };
+		7058503D1DC621800066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC51DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */; };
+		7058503E1DC621800066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC61DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */; };
+		7058503F1DC621800066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC71DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */; };
+		705850401DC621800066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC81DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */; };
+		705850411DC621800066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FC91DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */; };
+		705850421DC621800066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCA1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */; };
+		705850431DC621800066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCB1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */; };
+		705850441DC621800066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCC1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */; };
+		705850451DC621800066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCD1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */; };
+		705850461DC621800066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCE1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */; };
+		705850471DC621800066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FCF1DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */; };
+		705850481DC621800066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */; };
+		705850491DC621800066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */; };
+		7058504A1DC621800066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD21DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */; };
+		7058504B1DC621800066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */; };
+		7058504C1DC621800066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD41DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */; };
+		7058504D1DC621800066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD51DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */; };
+		7058504E1DC621800066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD61DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */; };
+		7058504F1DC621800066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD71DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */; };
+		705850501DC621800066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD81DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */; };
+		705850511DC621800066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FD91DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */; };
+		705850521DC621800066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDA1DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */; };
+		705850531DC621800066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDB1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */; };
+		705850541DC621800066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDC1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */; };
+		705850551DC621800066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDD1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */; };
+		705850561DC621800066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDE1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */; };
+		705850571DC621800066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FDF1DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */; };
+		705850581DC621800066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE01DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */; };
+		705850591DC621800066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE11DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */; };
+		7058505A1DC621800066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE21DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */; };
+		7058505B1DC621800066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE31DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */; };
+		7058505C1DC621800066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE41DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */; };
+		7058505D1DC621800066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE51DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */; };
+		7058505E1DC621800066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE61DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */; };
+		7058505F1DC621800066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE71DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */; };
+		705850601DC621800066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE81DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */; };
+		705850611DC621800066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FE91DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */; };
+		705850621DC621800066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FEA1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */; };
+		705850631DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FEB1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */; };
+		705850641DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FEC1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */; };
+		705850651DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FED1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */; };
+		705850661DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FEE1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */; };
+		705850671DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FEF1DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */; };
+		705850681DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF01DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */; };
+		705850691DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF11DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */; };
+		7058506A1DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */; };
+		7058506B1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */; };
+		7058506C1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF41DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */; };
+		7058506D1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF51DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */; };
+		7058506E1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF61DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */; };
+		7058506F1DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF71DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */; };
+		705850701DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF81DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */; };
+		705850711DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FF91DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */; };
+		705850721DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFA1DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */; };
+		705850731DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFB1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */; };
+		705850741DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFC1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */; };
+		705850751DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFD1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */; };
+		705850761DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFE1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */; };
+		705850771DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70584FFF1DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */; };
+		705850781DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850001DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */; };
+		705850791DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850011DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */; };
+		7058507A1DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850021DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */; };
+		7058507B1DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850031DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */; };
+		7058507C1DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850041DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */; };
+		7058507D1DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850051DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */; };
+		7058507E1DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850061DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */; };
+		7058507F1DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850071DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */; };
+		705850801DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850081DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */; };
+		705850811DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850091DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */; };
+		705850821DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058500A1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */; };
+		705850831DC621800066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058500B1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */; };
+		705850841DC621800066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058500C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */; };
+		705850851DC621800066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058500D1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */; };
+		705850861DC621800066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058500E1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */; };
+		705850891DC621BC0066CE7E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705850881DC621BC0066CE7E /* OpenGL.framework */; };
+		7058508B1DC621C40066CE7E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7058508A1DC621C40066CE7E /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70584F8A1DC621210066CE7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		70584F8C1DC621210066CE7E /* Magic_Mirror */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Magic_Mirror; sourceTree = BUILT_PRODUCTS_DIR; };
+		70584F8F1DC621220066CE7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		70584F971DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_aruco.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_aruco.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F981DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bgsegm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bgsegm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F991DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bioinspired.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bioinspired.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9A1DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_calib3d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9B1DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ccalib.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ccalib.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9D1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_datasets.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_datasets.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9E1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dnn.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dnn.3.1.0.dylib; sourceTree = "<group>"; };
+		70584F9F1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dpm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dpm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_face.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_face.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_features2d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA21DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_flann.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_fuzzy.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_fuzzy.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA41DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA51DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgcodecs.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA61DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA71DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_line_descriptor.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_line_descriptor.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA81DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ml.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FA91DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_objdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAA1DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_optflow.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_optflow.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAB1DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_photo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAC1DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_plot.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_plot.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAD1DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_reg.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_reg.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAE1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_rgbd.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_rgbd.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FAF1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_saliency.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_saliency.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB01DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_shape.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_shape.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB11DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stereo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stereo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stitching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_structured_light.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_structured_light.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB41DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_superres.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB51DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_surface_matching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_surface_matching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB61DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_text.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_text.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB71DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_tracking.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_tracking.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB81DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_video.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FB91DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBA1DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBB1DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xfeatures2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xfeatures2d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBC1DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ximgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ximgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBD1DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xobjdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xobjdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBE1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xphoto.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xphoto.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FBF1DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_aruco.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_aruco.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC01DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_aruco.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_aruco.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC11DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bgsegm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bgsegm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC21DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bgsegm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bgsegm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC31DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bioinspired.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bioinspired.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC41DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_bioinspired.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_bioinspired.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC51DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_calib3d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC61DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_calib3d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC71DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ccalib.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ccalib.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC81DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ccalib.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ccalib.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FC91DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_datasets.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_datasets.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCA1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_datasets.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_datasets.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCB1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dnn.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dnn.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCC1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dnn.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dnn.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCD1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dpm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dpm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCE1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dpm.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_dpm.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FCF1DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_face.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_face.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_face.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_face.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_features2d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD21DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_features2d.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_fuzzy.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_fuzzy.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD41DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_fuzzy.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_fuzzy.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD51DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD61DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD71DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgcodecs.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD81DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgcodecs.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FD91DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDA1DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDB1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_line_descriptor.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_line_descriptor.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDC1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_line_descriptor.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_line_descriptor.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDD1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ml.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDE1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ml.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FDF1DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_objdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE01DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_objdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE11DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_optflow.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_optflow.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE21DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_optflow.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_optflow.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE31DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_photo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE41DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_photo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE51DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_plot.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_plot.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE61DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_plot.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_plot.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE71DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_reg.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_reg.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE81DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_reg.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_reg.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FE91DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_rgbd.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_rgbd.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FEA1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_rgbd.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_rgbd.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FEB1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_saliency.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_saliency.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FEC1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_saliency.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_saliency.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FED1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_shape.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_shape.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FEE1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_shape.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_shape.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FEF1DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stereo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stereo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF01DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stereo.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stereo.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF11DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stitching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_stitching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_structured_light.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_structured_light.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF41DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_structured_light.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_structured_light.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF51DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_superres.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF61DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_superres.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_superres.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF71DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_surface_matching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_surface_matching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF81DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_surface_matching.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_surface_matching.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FF91DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_text.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_text.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFA1DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_text.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_text.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFB1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_tracking.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_tracking.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFC1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_tracking.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_tracking.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFD1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_video.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFE1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_video.3.1.0.dylib; sourceTree = "<group>"; };
+		70584FFF1DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
+		705850001DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
+		705850011DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		705850021DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_videostab.3.1.0.dylib; sourceTree = "<group>"; };
+		705850031DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xfeatures2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xfeatures2d.3.1.0.dylib; sourceTree = "<group>"; };
+		705850041DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xfeatures2d.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xfeatures2d.3.1.0.dylib; sourceTree = "<group>"; };
+		705850051DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ximgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ximgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		705850061DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ximgproc.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_ximgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		705850071DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xobjdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xobjdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		705850081DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xobjdetect.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xobjdetect.3.1.0.dylib; sourceTree = "<group>"; };
+		705850091DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xphoto.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xphoto.3.1.0.dylib; sourceTree = "<group>"; };
+		7058500A1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_xphoto.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_xphoto.3.1.0.dylib; sourceTree = "<group>"; };
+		7058500B1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		7058500C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		7058500D1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_flann.3.1.0.dylib; sourceTree = "<group>"; };
+		7058500E1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.3.1.0.dylib; path = ../../Libraries_opencv/libopencv_flann.3.1.0.dylib; sourceTree = "<group>"; };
+		705850881DC621BC0066CE7E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7058508A1DC621C40066CE7E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		7058508D1DC6D5F50066CE7E /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalcatface.xml; path = haarcascades/haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		7058508E1DC6D5F50066CE7E /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt_tree.xml; path = haarcascades/haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		7058508F1DC6D5F50066CE7E /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt.xml; path = haarcascades/haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		705850901DC6D5F50066CE7E /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = haarcascades/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		705850911DC6D5F50066CE7E /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_default.xml; path = haarcascades/haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		705850921DC6D6020066CE7E /* lbpcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lbpcascade_frontalcatface.xml; path = lbpcascades/lbpcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		705850931DC6D6020066CE7E /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lbpcascade_frontalface.xml; path = lbpcascades/lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		705850941DC6D6020066CE7E /* lbpcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = lbpcascade_profileface.xml; path = lbpcascades/lbpcascade_profileface.xml; sourceTree = "<group>"; };
+		705DE6B41DC7F7CE00C85A80 /* cam.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cam.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70584F891DC621210066CE7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7058508B1DC621C40066CE7E /* GLUT.framework in Frameworks */,
+				705850891DC621BC0066CE7E /* OpenGL.framework in Frameworks */,
+				705850691DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */,
+				705850501DC621800066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */,
+				7058503E1DC621800066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
+				705850561DC621800066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */,
+				705850571DC621800066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */,
+				705850611DC621800066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */,
+				7058503C1DC621800066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */,
+				7058502F1DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */,
+				7058504E1DC621800066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */,
+				7058502E1DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */,
+				705850581DC621800066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */,
+				7058504C1DC621800066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */,
+				705850351DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */,
+				705850121DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
+				705850371DC621800066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */,
+				705850621DC621800066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */,
+				7058505A1DC621800066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */,
+				7058506A1DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */,
+				705850221DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */,
+				705850451DC621800066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */,
+				705850791DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */,
+				705850601DC621800066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */,
+				705850541DC621800066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */,
+				705850421DC621800066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */,
+				7058506C1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */,
+				7058506E1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */,
+				7058506F1DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */,
+				705850851DC621800066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */,
+				7058505C1DC621800066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */,
+				7058502B1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */,
+				705850261DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib in Frameworks */,
+				705850151DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */,
+				705850741DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */,
+				705850391DC621800066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */,
+				705850201DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */,
+				705850161DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */,
+				7058501D1DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */,
+				7058507D1DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */,
+				705850441DC621800066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */,
+				705850291DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */,
+				705850591DC621800066CE7E /* libopencv_optflow.3.1.0.dylib in Frameworks */,
+				705850301DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */,
+				7058507B1DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */,
+				705850131DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */,
+				705850831DC621800066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */,
+				7058504F1DC621800066CE7E /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */,
+				705850321DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */,
+				705850271DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */,
+				705850701DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */,
+				705850821DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */,
+				7058505D1DC621800066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */,
+				705850631DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */,
+				705850171DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */,
+				705850511DC621800066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+				7058507A1DC621800066CE7E /* libopencv_videostab.3.1.0.dylib in Frameworks */,
+				705850191DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */,
+				705850721DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */,
+				705850411DC621800066CE7E /* libopencv_datasets.3.1.0.dylib in Frameworks */,
+				705850761DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */,
+				705850681DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */,
+				705850311DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				7058506D1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */,
+				705850231DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */,
+				7058503B1DC621800066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */,
+				7058505E1DC621800066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */,
+				7058507F1DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */,
+				7058501F1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */,
+				705850211DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib in Frameworks */,
+				705850101DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */,
+				705850361DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */,
+				7058504D1DC621800066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */,
+				7058506B1DC621800066CE7E /* libopencv_structured_light.3.1.0.dylib in Frameworks */,
+				7058501A1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */,
+				705850531DC621800066CE7E /* libopencv_line_descriptor.3.1.0.dylib in Frameworks */,
+				7058502C1DC621800066CE7E /* libopencv_superres.3.1.0.dylib in Frameworks */,
+				705850401DC621800066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */,
+				7058502D1DC621800066CE7E /* libopencv_surface_matching.3.1.0.dylib in Frameworks */,
+				705850781DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				7058505F1DC621800066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */,
+				705850181DC6217F0066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */,
+				7058505B1DC621800066CE7E /* libopencv_photo.3.1.0.dylib in Frameworks */,
+				7058501B1DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */,
+				705850661DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */,
+				705850751DC621800066CE7E /* libopencv_video.3.1.0.dylib in Frameworks */,
+				705850431DC621800066CE7E /* libopencv_dnn.3.1.0.dylib in Frameworks */,
+				705850111DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib in Frameworks */,
+				705850811DC621800066CE7E /* libopencv_xphoto.3.1.0.dylib in Frameworks */,
+				705850141DC6217F0066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */,
+				7058503F1DC621800066CE7E /* libopencv_ccalib.3.1.0.dylib in Frameworks */,
+				705850641DC621800066CE7E /* libopencv_saliency.3.1.0.dylib in Frameworks */,
+				705850801DC621800066CE7E /* libopencv_xobjdetect.3.1.0.dylib in Frameworks */,
+				705850861DC621800066CE7E /* libopencv_flann.3.1.0.dylib in Frameworks */,
+				705850491DC621800066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */,
+				7058503D1DC621800066CE7E /* libopencv_calib3d.3.1.0.dylib in Frameworks */,
+				7058502A1DC621800066CE7E /* libopencv_stitching.3.1.0.dylib in Frameworks */,
+				705850671DC621800066CE7E /* libopencv_stereo.3.1.0.dylib in Frameworks */,
+				705850551DC621800066CE7E /* libopencv_ml.3.1.0.dylib in Frameworks */,
+				705850471DC621800066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */,
+				705850771DC621800066CE7E /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				7058503A1DC621800066CE7E /* libopencv_bgsegm.3.1.0.dylib in Frameworks */,
+				7058504A1DC621800066CE7E /* libopencv_features2d.3.1.0.dylib in Frameworks */,
+				7058504B1DC621800066CE7E /* libopencv_fuzzy.3.1.0.dylib in Frameworks */,
+				705850841DC621800066CE7E /* libopencv_core.3.1.0.dylib in Frameworks */,
+				705850341DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */,
+				705850381DC621800066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */,
+				705850731DC621800066CE7E /* libopencv_tracking.3.1.0.dylib in Frameworks */,
+				7058507C1DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */,
+				705850651DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */,
+				7058500F1DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib in Frameworks */,
+				705850521DC621800066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+				705850281DC621800066CE7E /* libopencv_shape.3.1.0.dylib in Frameworks */,
+				7058501C1DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib in Frameworks */,
+				7058507E1DC621800066CE7E /* libopencv_ximgproc.3.1.0.dylib in Frameworks */,
+				705850461DC621800066CE7E /* libopencv_dpm.3.1.0.dylib in Frameworks */,
+				705850251DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib in Frameworks */,
+				705850711DC621800066CE7E /* libopencv_text.3.1.0.dylib in Frameworks */,
+				705850481DC621800066CE7E /* libopencv_face.3.1.0.dylib in Frameworks */,
+				705850331DC621800066CE7E /* libopencv_xfeatures2d.3.1.0.dylib in Frameworks */,
+				705850241DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib in Frameworks */,
+				7058501E1DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70584F831DC621210066CE7E = {
+			isa = PBXGroup;
+			children = (
+				7058508C1DC6D5D20066CE7E /* CascadeTrainingSets */,
+				70584F961DC6214C0066CE7E /* Libraries */,
+				70584F8E1DC621210066CE7E /* Magic_Mirror */,
+				70584F8D1DC621210066CE7E /* Products */,
+				705850871DC621BC0066CE7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70584F8D1DC621210066CE7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70584F8C1DC621210066CE7E /* Magic_Mirror */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70584F8E1DC621210066CE7E /* Magic_Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				705DE6B41DC7F7CE00C85A80 /* cam.txt */,
+				70584F8F1DC621220066CE7E /* main.cpp */,
+			);
+			path = Magic_Mirror;
+			sourceTree = "<group>";
+		};
+		70584F961DC6214C0066CE7E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				70584F971DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */,
+				70584F981DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */,
+				70584F991DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */,
+				70584F9A1DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */,
+				70584F9B1DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */,
+				70584F9C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */,
+				70584F9D1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */,
+				70584F9E1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */,
+				70584F9F1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */,
+				70584FA01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */,
+				70584FA11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */,
+				70584FA21DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */,
+				70584FA31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */,
+				70584FA41DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */,
+				70584FA51DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */,
+				70584FA61DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */,
+				70584FA71DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */,
+				70584FA81DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */,
+				70584FA91DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */,
+				70584FAA1DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */,
+				70584FAB1DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */,
+				70584FAC1DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */,
+				70584FAD1DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */,
+				70584FAE1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */,
+				70584FAF1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */,
+				70584FB01DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */,
+				70584FB11DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */,
+				70584FB21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */,
+				70584FB31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */,
+				70584FB41DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */,
+				70584FB51DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */,
+				70584FB61DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */,
+				70584FB71DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */,
+				70584FB81DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */,
+				70584FB91DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */,
+				70584FBA1DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */,
+				70584FBB1DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */,
+				70584FBC1DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */,
+				70584FBD1DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */,
+				70584FBE1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */,
+				70584FBF1DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */,
+				70584FC01DC6217F0066CE7E /* libopencv_aruco.3.1.0.dylib */,
+				70584FC11DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */,
+				70584FC21DC6217F0066CE7E /* libopencv_bgsegm.3.1.0.dylib */,
+				70584FC31DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */,
+				70584FC41DC6217F0066CE7E /* libopencv_bioinspired.3.1.0.dylib */,
+				70584FC51DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */,
+				70584FC61DC6217F0066CE7E /* libopencv_calib3d.3.1.0.dylib */,
+				70584FC71DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */,
+				70584FC81DC6217F0066CE7E /* libopencv_ccalib.3.1.0.dylib */,
+				70584FC91DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */,
+				70584FCA1DC6217F0066CE7E /* libopencv_datasets.3.1.0.dylib */,
+				70584FCB1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */,
+				70584FCC1DC6217F0066CE7E /* libopencv_dnn.3.1.0.dylib */,
+				70584FCD1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */,
+				70584FCE1DC6217F0066CE7E /* libopencv_dpm.3.1.0.dylib */,
+				70584FCF1DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */,
+				70584FD01DC6217F0066CE7E /* libopencv_face.3.1.0.dylib */,
+				70584FD11DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */,
+				70584FD21DC6217F0066CE7E /* libopencv_features2d.3.1.0.dylib */,
+				70584FD31DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */,
+				70584FD41DC6217F0066CE7E /* libopencv_fuzzy.3.1.0.dylib */,
+				70584FD51DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */,
+				70584FD61DC6217F0066CE7E /* libopencv_highgui.3.1.0.dylib */,
+				70584FD71DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */,
+				70584FD81DC6217F0066CE7E /* libopencv_imgcodecs.3.1.0.dylib */,
+				70584FD91DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */,
+				70584FDA1DC6217F0066CE7E /* libopencv_imgproc.3.1.0.dylib */,
+				70584FDB1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */,
+				70584FDC1DC6217F0066CE7E /* libopencv_line_descriptor.3.1.0.dylib */,
+				70584FDD1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */,
+				70584FDE1DC6217F0066CE7E /* libopencv_ml.3.1.0.dylib */,
+				70584FDF1DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */,
+				70584FE01DC6217F0066CE7E /* libopencv_objdetect.3.1.0.dylib */,
+				70584FE11DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */,
+				70584FE21DC6217F0066CE7E /* libopencv_optflow.3.1.0.dylib */,
+				70584FE31DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */,
+				70584FE41DC6217F0066CE7E /* libopencv_photo.3.1.0.dylib */,
+				70584FE51DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */,
+				70584FE61DC6217F0066CE7E /* libopencv_plot.3.1.0.dylib */,
+				70584FE71DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */,
+				70584FE81DC6217F0066CE7E /* libopencv_reg.3.1.0.dylib */,
+				70584FE91DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */,
+				70584FEA1DC6217F0066CE7E /* libopencv_rgbd.3.1.0.dylib */,
+				70584FEB1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */,
+				70584FEC1DC6217F0066CE7E /* libopencv_saliency.3.1.0.dylib */,
+				70584FED1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */,
+				70584FEE1DC6217F0066CE7E /* libopencv_shape.3.1.0.dylib */,
+				70584FEF1DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */,
+				70584FF01DC6217F0066CE7E /* libopencv_stereo.3.1.0.dylib */,
+				70584FF11DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */,
+				70584FF21DC6217F0066CE7E /* libopencv_stitching.3.1.0.dylib */,
+				70584FF31DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */,
+				70584FF41DC6217F0066CE7E /* libopencv_structured_light.3.1.0.dylib */,
+				70584FF51DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */,
+				70584FF61DC6217F0066CE7E /* libopencv_superres.3.1.0.dylib */,
+				70584FF71DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */,
+				70584FF81DC6217F0066CE7E /* libopencv_surface_matching.3.1.0.dylib */,
+				70584FF91DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */,
+				70584FFA1DC6217F0066CE7E /* libopencv_text.3.1.0.dylib */,
+				70584FFB1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */,
+				70584FFC1DC6217F0066CE7E /* libopencv_tracking.3.1.0.dylib */,
+				70584FFD1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */,
+				70584FFE1DC6217F0066CE7E /* libopencv_video.3.1.0.dylib */,
+				70584FFF1DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */,
+				705850001DC6217F0066CE7E /* libopencv_videoio.3.1.0.dylib */,
+				705850011DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */,
+				705850021DC6217F0066CE7E /* libopencv_videostab.3.1.0.dylib */,
+				705850031DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */,
+				705850041DC6217F0066CE7E /* libopencv_xfeatures2d.3.1.0.dylib */,
+				705850051DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */,
+				705850061DC6217F0066CE7E /* libopencv_ximgproc.3.1.0.dylib */,
+				705850071DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */,
+				705850081DC6217F0066CE7E /* libopencv_xobjdetect.3.1.0.dylib */,
+				705850091DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */,
+				7058500A1DC6217F0066CE7E /* libopencv_xphoto.3.1.0.dylib */,
+				7058500B1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */,
+				7058500C1DC6217F0066CE7E /* libopencv_core.3.1.0.dylib */,
+				7058500D1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */,
+				7058500E1DC6217F0066CE7E /* libopencv_flann.3.1.0.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		705850871DC621BC0066CE7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7058508A1DC621C40066CE7E /* GLUT.framework */,
+				705850881DC621BC0066CE7E /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7058508C1DC6D5D20066CE7E /* CascadeTrainingSets */ = {
+			isa = PBXGroup;
+			children = (
+				705850921DC6D6020066CE7E /* lbpcascade_frontalcatface.xml */,
+				705850931DC6D6020066CE7E /* lbpcascade_frontalface.xml */,
+				705850941DC6D6020066CE7E /* lbpcascade_profileface.xml */,
+				7058508D1DC6D5F50066CE7E /* haarcascade_frontalcatface.xml */,
+				7058508E1DC6D5F50066CE7E /* haarcascade_frontalface_alt_tree.xml */,
+				7058508F1DC6D5F50066CE7E /* haarcascade_frontalface_alt.xml */,
+				705850901DC6D5F50066CE7E /* haarcascade_frontalface_alt2.xml */,
+				705850911DC6D5F50066CE7E /* haarcascade_frontalface_default.xml */,
+			);
+			name = CascadeTrainingSets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70584F8B1DC621210066CE7E /* Magic_Mirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70584F931DC621220066CE7E /* Build configuration list for PBXNativeTarget "Magic_Mirror" */;
+			buildPhases = (
+				70584F881DC621210066CE7E /* Sources */,
+				70584F891DC621210066CE7E /* Frameworks */,
+				70584F8A1DC621210066CE7E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magic_Mirror;
+			productName = Magic_Mirror;
+			productReference = 70584F8C1DC621210066CE7E /* Magic_Mirror */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70584F841DC621210066CE7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ambika Yadav";
+				TargetAttributes = {
+					70584F8B1DC621210066CE7E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 70584F871DC621210066CE7E /* Build configuration list for PBXProject "Magic_Mirror" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70584F831DC621210066CE7E;
+			productRefGroup = 70584F8D1DC621210066CE7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70584F8B1DC621210066CE7E /* Magic_Mirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70584F881DC621210066CE7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70584F901DC621220066CE7E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		70584F911DC621220066CE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		70584F921DC621220066CE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		70584F941DC621220066CE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_calib3d",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+			};
+			name = Debug;
+		};
+		70584F951DC621220066CE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_imgcodecs",
+					"-lopencv_calib3d",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70584F871DC621210066CE7E /* Build configuration list for PBXProject "Magic_Mirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70584F911DC621220066CE7E /* Debug */,
+				70584F921DC621220066CE7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70584F931DC621220066CE7E /* Build configuration list for PBXNativeTarget "Magic_Mirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70584F941DC621220066CE7E /* Debug */,
+				70584F951DC621220066CE7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70584F841DC621210066CE7E /* Project object */;
+}
